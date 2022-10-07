@@ -13,7 +13,7 @@
 		
 		div{float: left;}
 		
-		.ysa{
+		.tab{
 			background-color: white;
 		    width: 800px;
 		    height: 1000px;
@@ -23,14 +23,15 @@
 		
 		.ysb{
 			background-color: white;
-		    width: 1600px;
+		    width: 1525px;
 		    height: 50px;
 		    margin: auto;
 		}
 		
-		.ysalist{
+		.item{
 		  	width: 800px;
-		    margin: aut;o}
+		    margin: auto;
+		}
 		
 		.ysblist li{
 			float: left;
@@ -56,6 +57,9 @@
 	     	height: 150px;
 		    margin-top: 25px;
 	    	margin-left: 15px;
+			text-decoration: underline;
+			text-decoration-color: black;
+			
 		}
 	
 		.ysbb{
@@ -64,7 +68,9 @@
 	    	height: 200px;
 	    	margin-top: 25px;
 	    	margin-left: 15px;
+			line-height: 200px;
 	   	}
+		
 		
 		.yscc{
 			background-color: white;
@@ -74,33 +80,68 @@
 	    	margin-left: 15px;
 		}
 		
-		.ysalist{
+		.ysaa1{
+			width: 75px;
+			height: 50px;
+			float: left;
+			margin-top: 75px;
+		}
+		
+		.ysaa1 a{
+			text-align: center;
+			color: black;
+		}
+	
+		.ysaa2{
+			width:150px;
+			height: 60px;
+			float:left;
+		}
+		
+		.ysaa2 a{
+		    text-align: center;
+			color: #828282
+		}		
+		
+		.item{
 			list-style: none;
 		    padding: 0px;
 	    	color:black;
 	    	text-decoration: none;
-			float: left
-		}
+			float: left;
+			}
 		
-		.ysalist li{
+		.item li{
 			height: 235px;
 			padding-left: 20px;
 		    
 		}
 		
+		.item a:hover{
+			color: #838383;
+				
+		}
 		
-		.ysalist span{
+		
+		.item span{
 			font-weight: bold;
 		}
 		
-		a{color: black;}
+		 a{color: black;}
 		
-		.ysaaa{
+		.tab_list{
 			float: left;
 			margin: auto;
+			border-bottom: initial;
+			border-bottom: 1px solid black；
 		}
 		
-		.ysaaa li{
+		.tab_list ul{
+			padding-left: 0px;
+			height: 50px;
+		}
+		
+		.tab_list li{
 			float: left;
 			height: 50px;
 			width: 100px;
@@ -108,20 +149,149 @@
 			text-align: center;
 		}
 		
-		.ysaaa a{
+		.tab_list a{
 			color:black;
 			display: block;
 		}
 		
-		.ysaaa a:hover{
-			background:#A3A3A3;
+		.tab_list a:hover{
+			background:#AAAAAA;
 		}
 		
-		.ysalist a:hover{color: #B0B0B0;}
+		.tab_list a:hover{color: black;}
 		
 		.ysbbb{color: deepskyblue;}
 		
-		.header-search{
+		.lbox{
+			width: 150px;
+			height: 150px;
+			background-color: #A8A8A8;
+		}
+		
+		.lb3{
+			float: left;
+			margin-left: 100px
+		}
+		
+		.lb2{
+			position：absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		
+		.lb2 a{
+			color: white;
+		}
+		
+		.lb2 a:hover{
+			color: white;
+			background-color:initial
+
+		}
+		
+		.lbox2{
+			margin-top: 12px;
+			margin-left: 15px;
+			background-color: #2A5FD4;
+			height: 30px;
+			width: 80px;
+			border-bottom: 1px solid white;
+			border-radius: 15px;
+			text-align: center;
+			
+		}
+		
+		.lb1{
+			float: left;
+		    height: 40px;
+		    width: 100px;
+		    line-height: 50px;	
+	      	text-align: center;	
+		}
+		
+		.current{
+			background-color: white;
+			color: black;
+		}
+		
+		.nav {
+            position: sticky;
+            top: 0px;
+        }
+   
+		
+		.tan {
+			margin-left: 50px;
+        	display:none;
+	        top:20%;
+        	left:50%;
+        	margin-left:-250px;
+        	padding:20px;
+        	width:500px;
+        	height:300px;
+        	position:relative;
+        	border:1px solid #ccc;
+        	border-radius:25px;
+        	-moz-border-radius:25px; 
+        	box-shadow: 10px 10px 5px #888888;
+        	-moz-box-shadow: 10px 10px 5px #888888; 
+            z-index:1002;
+         	background-color:#FFF;
+        }
+        .close {
+        	width:38px;
+        	height:38px;
+        	position:absolute;
+         	background:url(https://img-blog.csdn.net/20170710141137823);
+        	background-size:38px 38px;
+        	-moz-background-size:38px 38px;
+        	background-repeat:no-repeat;
+        	right:20px;
+        	top:20px;
+        	cursor:pointer;
+        	transition: transform 1s ease-out;
+        	-webkit-transition: -webkit-transform 1s ease-out;  
+	        -moz-transition: -moz-transform 1s ease-out;
+        }
+        .close:hover {
+        	-webkit-transform: rotate(180deg);
+        	-moz-transform: rotate(180deg);
+        	transform: rotate(180deg);
+        }
+        .gray {
+        	display:none;
+        	position:absolute; 
+        	top:0%;
+        	left:0%;
+        	width:100%;
+	        height:100%;
+        	background-color:black;
+        	z-index:1001;
+        	-moz-opacity:0.2;
+        	opacity:.20;
+        	filter:alpha(opacity=20);
+        }
+		
+	</style>
+	</head>
+	
+	
+	
+	
+	
+	
+<body>
+	<div class="ysb">
+		<ul class="ysblist nav"><b>
+			<li class="ysbbb"><h1>知乎</h1></li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">会员</a></li>
+			<li><a href="#">发现</a></li>
+			<li><a href="#">等你来答</a></li></b>
+			<style>
+			.header-search{
 			float: left;
 			width: 296px;
 			margin-top: 12px;
@@ -142,7 +312,7 @@
 		
 		.header-search .search-form .search-text{
 			top: -98px;
-			width: 223px;
+			width: 253px;
 			height: 30px;
 			padding: 0 10px;
 			font-size: 14px;
@@ -158,54 +328,112 @@
 			color: black;
 			font-size: 14px;
 		}
-	</style>
-	</head>
-	
-	
-	
-	
-	
-	
-	<body>
-	<div class="ysb">
-		<ul class="ysblist"><b>
-			<li class="ysbbb"><h1>知乎</h1></li>
-			<li><a href="#">首页</a></li>
-			<li><a href="#">会员</a></li>
-			<li><a href="#">发现</a></li>
-			<li><a href="#">等你来答</a></li>
+			</style>
 			<div class="header-search">
 				<form action="" class="search-form">
 					<input type="text" class="search-text" placeholder="所有的问题都会有答案的">
 					<input type="button" class="search-btn" value="搜索">
 				</form>
 			</div>
-				 
-			</b>
+			
+			<b>
+		    <div class="lbox2"><li class="lb2"><a href="#">提问</a></li></div>
+			<li class="lb3"><a href="#">消息</a></li>
+		    <li class="lb1"><a href="#">聊天</a></li></b>
+			<style lang="">
+				ul>li>ul{
+					display:none;
+				}
+				input[type=checkbox]{
+					display:none;background-color: #A8A8A8			}
+				ul li inout{type=checkbox}:checked+ul{
+					display: block;background-color: #A8A8A8;
+				}
+				
+				ul li inout{type=checkbox}:checked+ul a:hover{
+					white-space:inherit;background-color: #A8A8A8;
+				}
+			</style>
+				<li>
+				<label for="checkbox3" class="lb1"><b>头像</b></label>
+				<input type="checkbox" id="checkbox3" checked="true">
+				<ul>
+					<li><a href="#">我的主页</a></li>
+					<li><a href="#">设置</a></li>
+					<li><a href="#">退出</a></li>
+				</ul>
+				</li>
+			
 		</ul>
-		<br>
-		
+		<br>	
 	</div>
 			
-	<div class="ysa" ;class="main">
-		<ul class="ysaaa">
-			<li><h2><a href="#">关注</a></h2></li>
-			<li><h2><a href="#">推荐</a></h2></li>
-			<li><h2><a href="#">热榜</a></h2></li>
-			<li><h2><a href="#">视频</a></h2></li>
-		<hr>
-		</ul>
-		<ul class="ysalist"><h3>
-			<li><span>晴天</span><a href="#"><b>|刮风这天，我试过握着你手</b></a></li><hr>
-		    <li><span>青花瓷</span><a href="#"><b>|天青色等烟雨，而我在等你</b></a></li><hr>
-		    <li><span>七里香</span><a href="#"><b>|雨下整夜，我的爱溢出就像雨水</b></a></li><hr>	
-			<li><span>稻香</span><a href="#"><b>|还记得你说家是唯一的城堡</b></a></li>
-			</h3>
-		</ul>
+<div class="tab" ;class="main">
+
+		<div class="tab_list">
+			<ul>
+	    		<li class="current"><h2><a href="#">关注</a></h2></li>
+    			<li><h2><a href="#">推荐</a></h2></li>
+				<li><h2><a href="#">推荐</a></h2></li>
+				<li><h2><a href="#">视频</a></h2></li><hr>
+	 	    </ul>
+		</div>
+	<div class="tab_con">
+		<div class="item">
+	    	<ul><h3>
+				<div class="item">
+					<li><span>晴天</span><a href="#"><b>|刮风这天，我试过握着你手</b></a></li>
+					<a href="javascript:void(0)" class="dianji">收藏</a>
+					<div class="tan">
+                    <span class="close"> </span>
+                    收藏</div>
+                    <div class="gray"></div>
+					<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+                    <script type="text/javascript">
+                    $(document).ready(function(){  
+                    $(".dianji").click(function(){  
+                    $(".tan").show(); 
+                  	$(".gray").show(); 
+                     }); 
+                    $(".close").click(function(){  
+                    $(".tan").hide(); 
+                 	$(".gray").hide(); 
+                    });  
+                    $(".gray").click(function(){  
+                    $(".tan").hide(); 
+                	$(".gray").hide(); 
+                    }); 
+                    });  
+					</script>
+				<hr>
+				</div>
+				<div class="item">
+					<li><span>青花瓷</span><a href="#"><b>|天青色等烟雨，而我在等你</b></a></li><hr>
+				</div>
+				<div class="item">
+					<li><span>七里香</span><a href="#"><b>|雨下整夜，我的爱溢出就像雨水</b></a></li><hr>
+			    </div>
+				<div class="item">
+					<li><span>稻香</span><a href="#"><b>|还记得你说家是唯一的城堡</b></a></li><hr>
+			    </div>		
+	    		</h3>
+    	   	</ul>
+		</div>	
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
 	</div>
-	    <div class="ysaa"></div>
-	    <div class="ysaa"></div>
-		<div class="ysbb"></div>
-		<div class="yscc"></div>
-	</body>
+</div>
+	    <div class="ysaa">
+			<div class="ysaa1"><a href="#"><h5>回答问题</h5></a></div>
+			<div class="ysaa1"><a href="#"><h5>发视频</h5></a></div>
+			<div class="ysaa1"><a href="#"><h5>写文章</h5></a></div>
+			<div class="ysaa1"><a href="#"><h5>发想法</h5></a></div>
+	        <div class="ysaa2"><a href="#"><h4>稍后答</h4></a></div>
+     	    <div class="ysaa2"><a href="#"><h4>草稿箱</h4></a></div>
+		</div>	
+		<div class="ysbb"><h2>此处投放广告</h2></div>
+		<div class="yscc">
+	    </div>
+</body>
 </html>
